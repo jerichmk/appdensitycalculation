@@ -26,4 +26,4 @@ Final <- mutate(FinalTable, Density = PopulationPerBarangay/BarangayArea)
 FinalSorted = Final %>% arrange(desc(Density))
 Top5Barangay <- FinalSorted[1:5,]
 View(Top5Barangay)
-write.csv(FinalTop5, file = "Population Density by Barangay.csv")
+write.csv(Top5Barangay, file = "Population Density by Barangay.csv")
